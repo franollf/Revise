@@ -7,7 +7,7 @@
 body {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
-    background: #DEF2F1;
+    background: #F9F6EE;
 }
 
 header {
@@ -60,7 +60,7 @@ header {
     border: 1px solid black;
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;
-    background-color: #DEF2F1;
+    background-color: #F9F6EE;
     margin-bottom: 10px;
     outline: none;
 }
@@ -100,7 +100,7 @@ header {
     width: 270px;
     height: 200px;
     border-radius: 10px;
-    background-color: #DEF2F1;
+    background-color: #FFF8E7;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
