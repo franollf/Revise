@@ -8,17 +8,23 @@
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
   <body>
+    <div id="preloader">
+        
+        </div>
     <div class="welcome-screen">
       <h1>WELCOME TO REVIZE</h1>
       <button onclick="continueToMainPage()"><h2>Continue</h2></button>
-      <div class="🤚">
-        <div class="👉"></div>
-        <div class="👉"></div>
-        <div class="👉"></div>
-        <div class="👉"></div>
-        <div class="🌴"></div>
-        <div class="👍"></div>
-      </div>
       <script src="welcome.js"></script>
+
+
+
+      <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+          loader.style.display = "none";
+        })
+      </script>
+
   </body>
 </html>
