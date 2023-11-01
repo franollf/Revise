@@ -145,17 +145,21 @@ header {
     }
 }
 
-h1 {
+title {
     font-family: "Poppins", sans-serif;
-    font-weight: 300px;
-    font-size: 28px;
+    font-weight: 300;
+    font-size: 30px;
     margin: 0;
-    transition: color 0.3s; /* Smooth text color transition */
-}
-
-h1:hover {
+    color: #333;
+    transition: color 0.3s, transform 0.3s; 
+    animation: coolAnimation 2s infinite alternate; 
+  }
+  
+  title:hover {
     color: #505168; /* Text color on hover */
-}
+    transform: scale(1.1); /* Scale up the text on hover */
+  }
+
 
 
 
