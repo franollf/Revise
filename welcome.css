@@ -31,13 +31,15 @@ h1 {
   margin: 0 0 20px;
 }
 
+
+
 button {
   height: 100px;
   width: 300px;
   padding: 10px 20px;
   background: #27233A;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   color: #fff;
   cursor: pointer;
   font-size: 18px;
