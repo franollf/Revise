@@ -40,7 +40,7 @@ button {
   background: #27233A;
   border: none;
   border-radius: 5px;
-  color: #fff;
+    color: #fff;
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s;

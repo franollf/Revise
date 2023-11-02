@@ -110,8 +110,8 @@ header {
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
     outline: none;
-    overflow: hidden; /* Hide overflow */
-    word-wrap: break-word; /* Wrap long words to the next line */
+    overflow: hidden;
+    word-wrap: break-word; 
 }   
 
 .flashcard h2{
@@ -150,12 +150,29 @@ h1 {
     font-weight: 300px;
     font-size: 28px;
     margin: 0;
-    transition: color 0.3s; /* Smooth text color transition */
+    transition: color 0.3s; 
 }
 
 h1:hover {
-    color: #505168; /* Text color on hover */
+    color: #505168; 
 }
 
+
+.delete-button {
+    background-color: #8367C7 ; 
+    color: #fff; 
+    border: none; 
+    padding: 5px 10px; 
+    border-radius: 50%; 
+    font-size: 16px; 
+    cursor: pointer;
+    position: absolute;
+    margin-left: 230px;
+    margin-bottom: 165px;
+}
+
+.delete-button:hover {
+    background-color: #cc0000; 
+}
 
 

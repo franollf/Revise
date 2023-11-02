@@ -9,33 +9,55 @@ JSON.parse(localStorage.getItem('items')) : [];
 
 contentArray.array.forEach(divMaker);
 
-function divMaker(text){
+// ... (existing code)
+
+function divMaker(text) {
     var div = document.createElement("div");
     var h2_question = document.createElement("h2");
-    var h2_answer = document.createElement("h2")
+    var h2_answer = document.createElement("h2");
+    var deleteButton = document.createElement("button"); 
 
     div.className = 'flashcard';
 
     h2_question.innerHTML = text.my_question;
 
-    h2_answer.setAttribute("style", 
-    "text-align:center; display:none; color:red");
+    h2_answer.setAttribute("style", "text-align:center; display:none; color:red");
     h2_answer.innerHTML = text.my_answer;
 
+    deleteButton.innerHTML = 'X'; 
+    deleteButton.className = 'delete-button';
+
+    
+    deleteButton.setAttribute("data-index", contentArray.indexOf(text));
+
+    div.appendChild(deleteButton); 
     div.appendChild(h2_question);
     div.appendChild(h2_answer);
 
-    div.addEventListener("click", function(){
-        if(h2_answer.style.display == "none")
-          h2_answer.style.display = "block";
-        else
-        h2_answer.style.display = "none";
+    deleteButton.addEventListener("click", function () {
+        
+        const index = parseInt(deleteButton.getAttribute("data-index"));
 
+        
+        contentArray.splice(index, 1);
+        localStorage.setItem('items', JSON.stringify(contentArray));
+
+      
+        flashcards.removeChild(div);
+    });
+
+    div.addEventListener("click", function () {
+        if (h2_answer.style.display == "none")
+            h2_answer.style.display = "block";
+        else
+            h2_answer.style.display = "none";
     });
 
     flashcards.appendChild(div);
-
 }
+
+
+
 
 function delFlashcards(){
     localStorage.clear()
